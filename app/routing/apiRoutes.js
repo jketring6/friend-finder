@@ -38,6 +38,8 @@ function searchFriends(newMatch) {
 
             // values still show as undefined from each of the scores
             totalDifference += Math.abs(friendsScore - matchScore);
+            // the variable of scores returns undefined
+            // once the variable can be converted into integer, app should function properly
 
         }
 
