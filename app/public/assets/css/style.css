@@ -1,0 +1,17 @@
+body {
+	background-image: url("../images/friends_bg.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.jumbotron {
+   background: rgb(54, 54, 54); 
+   background: rgba(54, 54, 54, 0.5);
+   text-align: center;
+   margin-top: 10%; 
+}
+
+h2 {
+	color: white;
+}
