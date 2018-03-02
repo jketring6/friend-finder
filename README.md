@@ -6,6 +6,8 @@ Node.js app that allows users to select their answers based on their personality
 
 ### To run this app via Heroku, visit: 
 
+https://git.heroku.com/shielded-cove-24554.git
+
 ### To run this in Terminal/Bash:
 
 Clone down the repository and run:
@@ -29,7 +31,7 @@ Once the server is listening, visit: https://localhost:3000
 
 ## Deployment
 
-Link to Heroku App
+https://git.heroku.com/shielded-cove-24554.git
 
 ## Built With
 
