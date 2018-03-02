@@ -12,12 +12,13 @@ module.exports = function(app) {
     app.post("/api/friends", function(req, res) {
 
         var newMatch = {};
-        var match = searchFriends(newMatch);
+        console.log(req.body)
 
         newMatch.name = req.body.name;
         newMatch.photo = req.body.photo;
-        newMatch.scores = req.body["scores[]"];
+        newMatch.scores = req.body.scores;
 
+        var match = searchFriends(newMatch);
 
         friends.push(newMatch);
         res.send(match);
@@ -27,17 +28,18 @@ module.exports = function(app) {
 function searchFriends(newMatch) {
 
     var friendMatch = { score: 100, index: null };
-    var totalDifference = 0;
-    var friendsScore = parseInt(friends[i].scores[j]);
-    var matchScore = parseInt(newMatch.scores[j]) 
+    var totalDifference = null;
+
 
     for (var i = 0; i < friends.length; i++) {
-
+    
         
         for (var j = 0; j < friends[i].scores.length; j++) {
 
+// console.log(newMatch);
             // values still show as undefined from each of the scores
-            totalDifference += Math.abs(friendsScore - matchScore);
+            totalDifference += Math.abs(friends[i].scores[j] - newMatch.scores[j]);
+
             // the variable of scores returns undefined
             // once the variable can be converted into integer, app should function properly
 
